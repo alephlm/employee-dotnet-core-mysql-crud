@@ -7,7 +7,7 @@
 
 #### Migration
 - For the fist execution you need to run migrations for creating db tables.
-- execute: `dotnet ef migrations add InitialCreate` than
+- execute: `dotnet ef migrations add InitialCreate` then
 - execute: `dotnet ef database update`.
 
 #### Running
