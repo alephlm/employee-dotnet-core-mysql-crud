@@ -68,16 +68,16 @@ namespace EmployeeCRUD.Controllers
 
         // DELETE: api/Employee/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTodoItem(long id)
+        public async Task<IActionResult> DeleteEmployee(long id)
         {
-            var todoItem = await _context.Employees.FindAsync(id);
+            var employee = await _context.Employees.FindAsync(id);
 
-            if (todoItem == null)
+            if (employee == null)
             {
                 return NotFound();
             }
 
-            _context.Employees.Remove(todoItem);
+            _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
 
             return NoContent();
