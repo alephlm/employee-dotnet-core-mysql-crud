@@ -1,0 +1,1 @@
+Dotnet core and mysql CRUD example
